@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Survey</title>
+    <link rel="stylesheet" href="./survey.css">
+</head>
+<body>
+    <div id='main'>
+        <header>
+            <h1 id='title'>Training Survey Form</h1>
+            <h4 id="description">Please help us improve our services by completing this short survey form </h4>        
+        </header>  
+        <form action="" id="survey-form">
+            <div class="form-grp" >
+                <label id="name-label" for="name">Name</label>
+                <input type="text" placeholder="please enter your name" id="name">
+            </div>
+            <div class="form-grp">
+                <label id="email-label"  for="email">Email</label>
+                <input type="email" placeholder="please enter your email" id="email">
+            </div> 
+            <div class="form-grp">     
+                <label id="age-label" for="age" >Age(optional)</label>
+                <input type="number" placeholder="please enter your age" id="age" min="12" max="80">
+            </div> 
+            <div class="form-grp">   
+                <label>Level</label>
+                <select id="dropdown"> 
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Experienced">Experienced</option>
+                    <option value="Professional">Professional</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div> 
+            <div class="form-grp">     
+                <p>Is the training program useful and would you recommend  to a friend?</p>
+                <label><input type="radio"  name="Yes">Yes</label>
+                <label><input type="radio"  name="No">No</label> 
+                <label><input type="radio"  name="Maybe">Maybe</label>    
+            </div> 
+            <div class="form-grp">     
+                <p>Which of the training programs whould you have liked to spend more time on?</p>
+                <label><input type="checkbox"  value="Definately">Digital Marketing</label>
+                <label><input type="checkbox"  value="Maybe">Project Management</label>
+                <label><input type="checkbox"  value="Not sure">Design Thinking</label>
+                <label><input type="checkbox"  value="Not sure">Branding</label>
+                <label><input type="checkbox"  value="Not sure">Driving Sales</label>
+                <label><input type="checkbox"  value="Not sure">Customers Behavior</label>
+                <label><input type="checkbox"  value="Not sure">Prsentation skills</label>
+            </div> 
+            <div class="form-grp">
+                <p>Any other comments?</p>
+                <textarea placeholder="please enter your comment  here" id="email" cols="70" rows="10"></textarea>
+            </div> 
+            <div>
+                <button>Submit</button>
+            </div>
+        </form>
+        
+    </div> 
+</body>
+</html>
